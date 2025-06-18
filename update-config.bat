@@ -1,14 +1,14 @@
 @echo off
 
-set "myGamesPath=%USERPROFILE%\Documents\My Games\Terraria"
+set "myGamesPath=%USERPROFILE%\문서\My Games\Terraria"
 
 REM if terraria folder isn't found, check for Onedrive folder
 IF NOT EXIST "%myGamesPath%" (
-    set "myGamesPath=%USERPROFILE%\OneDrive\Documents\My Games\Terraria"
+    set "myGamesPath=%USERPROFILE%\OneDrive\문서\My Games\Terraria"
 )
 REM if folder still isn't found, exit
 IF NOT EXIST "%myGamesPath%" (
-    ECHO Terraria folder not found at "%USERPROFILE%\Documents\My Games\Terraria" or "%USERPROFILE%\OneDrive\Documents\My Games\Terraria"
+    ECHO Terraria folder not found at "C:\Users\eeewy\OneDrive\문서\My Games\Terraria" or "%USERPROFILE%\OneDrive\문서\My Games\Terraria"
     pause
     exit
 )
